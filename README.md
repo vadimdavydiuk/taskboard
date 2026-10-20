@@ -27,3 +27,5 @@ TaskBoard дозволяє створювати завдання, ставити
 - [ ] Публікація онлайн
 
 ![alt text](images/image.png)
+## Демо
+[Відкрити сайт](https://vadimdavydiuk.github.io/taskboard/)
