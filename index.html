@@ -22,6 +22,37 @@
             <h1>Дошка завдань</h1>
             <p>TaskBoard допоможе записувати справи, ставити пріоритети та відмічати виконане. Це навчальний проєкт курсу «Технології створення веб-застосунків».</p>
         </section>
+
+        <!-- Нова секція з формою (додано за вимогами лабораторної W-10) -->
+        <section class="card">
+            <h2>Нова задача</h2>
+            <form id="task-form" class="task-form">
+                <div class="form-row">
+                    <label class="field grow">
+                        <span>Назва</span>
+                        <input type="text" id="title" name="title" placeholder="Наприклад: підготувати звіт" required maxlength="80">
+                    </label>
+                    <label class="field">
+                        <span>Пріоритет</span>
+                        <select id="priority" name="priority">
+                            <option value="low">Низький</option>
+                            <option value="medium" selected>Середній</option>
+                            <option value="high">Високий</option>
+                        </select>
+                    </label>
+                    <label class="field">
+                        <span>Термін</span>
+                        <input type="date" id="deadline" name="deadline">
+                    </label>
+                </div>
+                <label class="field">
+                    <span>Опис</span>
+                    <textarea id="description" name="description" rows="3" placeholder="Додаткові деталі (необов'язково)"></textarea>
+                </label>
+                <button type="submit" class="btn">Додати задачу</button>
+                <p id="form-message" class="form-message" role="alert"></p>
+            </form>
+        </section>
     </main>
     <footer class="site-footer">
         <p>&copy; 2026 TaskBoard · навчальний проєкт</p>
